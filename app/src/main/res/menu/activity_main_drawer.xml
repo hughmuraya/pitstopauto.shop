@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic__menu_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_menu_services"
+            android:icon="@drawable/ic__menu_services"
+            android:title="@string/menu_services" />
+
+        <item
+            android:id="@+id/nav_menu_spares"
+            android:icon="@drawable/ic__menu_spares"
+            android:title="@string/menu_spares" />
+
+        <item
+            android:id="@+id/nav_menu_diagnostics"
+            android:icon="@drawable/ic__menu_diagnostics"
+            android:title="@string/menu_diagnostics" />
+
+        <item
+            android:id="@+id/nav_menu_my_vehicle"
+            android:icon="@drawable/ic__menu_vehicle"
+            android:title="@string/menu_vehicle" />
+
+        <item
+            android:id="@+id/nav_menu_profile"
+            android:icon="@drawable/ic__menu_profile"
+            android:title="@string/menu_profile" />
+
+        <item
+            android:id="@+id/nav_menu_wallet"
+            android:icon="@drawable/ic__menu_wallet"
+            android:title="@string/menu_Wallet" />
+
+        <item
+            android:id="@+id/nav_menu_settings"
+            android:icon="@drawable/ic__menu_settings"
+            android:title="@string/menu_settings" />
+
+    </group>
+</menu>

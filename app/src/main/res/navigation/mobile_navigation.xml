@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="shop.pitstopauto.android.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_menu_diagnostics"
+        android:name="shop.pitstopauto.android.fragments.DiagnosticsFragment"
+        android:label="@string/menu_diagnostics"
+        tools:layout="@layout/fragment_diagnostics" />
+    <fragment
+        android:id="@+id/nav_menu_profile"
+        android:name="shop.pitstopauto.android.fragments.MyProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_my_profile"/>
+    <fragment
+        android:id="@+id/nav_menu_my_vehicle"
+        android:name="shop.pitstopauto.android.fragments.MyVehicleFragment"
+        android:label="@string/menu_vehicle"
+        tools:layout="@layout/fragment_my_vehicle" />
+    <fragment
+        android:id="@+id/nav_menu_services"
+        android:name="shop.pitstopauto.android.fragments.ServicesFragment"
+        android:label="@string/menu_services"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/nav_menu_settings"
+        android:name="shop.pitstopauto.android.fragments.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_menu_spares"
+        android:name="shop.pitstopauto.android.fragments.SparesFragment"
+        android:label="@string/menu_spares"
+        tools:layout="@layout/fragment_spares" />
+    <fragment
+        android:id="@+id/nav_menu_wallet"
+        android:name="shop.pitstopauto.android.fragments.WalletFragment"
+        android:label="@string/menu_Wallet"
+        tools:layout="@layout/fragment_wallet"/>
+    <fragment
+        android:id="@+id/nav_add_car"
+        android:name="shop.pitstopauto.android.fragments.AddCarFragment"
+        android:label="@string/add_car"
+        tools:layout="@layout/fragment_add_car" />
+
+</navigation>
