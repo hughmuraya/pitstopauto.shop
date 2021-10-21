@@ -149,6 +149,7 @@ public class AddCarFragment extends Fragment {
                 if (validateNulls()){
 
                     doCarAddition();
+
                 }
             }
         });

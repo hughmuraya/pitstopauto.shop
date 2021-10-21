@@ -39,4 +39,6 @@
     <string name="add_chasis_number">Please provide a chasis number</string>
     <string name="add_millage">Please provide your current millage</string>
     <string name="add_next_service">Please provide next service details</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="edit_profile">Edit Profile</string>
 </resources>

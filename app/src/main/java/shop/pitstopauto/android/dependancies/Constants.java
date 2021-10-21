@@ -6,7 +6,7 @@ public class Constants {
     public static String LOGGED_IN_USER = "LOGGED_IN_USER";
 
     /*ENDPOINT*/
-    public static String ENDPOINT = "http://api.pitstopauto.shop/api/";
+    public static String ENDPOINT = "https://api.pitstopauto.shop/api/";
 
 
     //AUTH
@@ -14,6 +14,7 @@ public class Constants {
     public static String REGISTER = "auth/register";
     public static String VALID_USERNAME = "data/valid/username/";
     public static String CURRENT_USER = "auth/user";
+    public static String UPDATE_USER = "auth/";
 
     //CAR
     public static String ADD_CAR = "data/add/car/";

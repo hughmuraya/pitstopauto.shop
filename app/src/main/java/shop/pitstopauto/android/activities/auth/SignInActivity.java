@@ -74,6 +74,7 @@ public class SignInActivity extends AppCompatActivity  {
 
             }
         });
+
         ((View) findViewById(R.id.tv_sign_up)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -165,7 +166,7 @@ public class SignInActivity extends AppCompatActivity  {
                     @Override
                     public void onError(ANError error) {
                         // handle error
-                        Log.e(TAG, error.getErrorDetail());
+                        Log.e(TAG, String.valueOf(error.getErrorCode()));
 
                         if (error.getErrorBody().contains("Incorrect username or password.")){
 
@@ -176,6 +177,12 @@ public class SignInActivity extends AppCompatActivity  {
                         else if(error.getErrorCode() == 500 ){
 
                             Snackbar.make(findViewById(R.id.activity_sign_in), "Internal Server Error. Please try again later!" , Snackbar.LENGTH_LONG).show();
+
+                        }
+
+                        else if(error.getErrorCode() == 0 ){
+
+                            Snackbar.make(findViewById(R.id.activity_sign_in), "No connection. Please try again later!" , Snackbar.LENGTH_LONG).show();
 
                         }
 

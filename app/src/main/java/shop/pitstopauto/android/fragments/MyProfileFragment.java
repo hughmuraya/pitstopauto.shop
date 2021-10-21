@@ -3,6 +3,7 @@ package shop.pitstopauto.android.fragments;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,6 +18,7 @@ import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.fxn.stash.Stash;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textview.MaterialTextView;
 
@@ -78,6 +80,9 @@ public class MyProfileFragment extends Fragment {
     @BindView(R.id.shimmers_my_container)
     ShimmerFrameLayout shimmers_my_container;
 
+    @BindView(R.id.fab_edit_profile)
+    FloatingActionButton fab_edit_profile;
+
     public void onAttach(Context ctx) {
         super.onAttach(ctx);
         this.context = ctx;
@@ -115,6 +120,15 @@ public class MyProfileFragment extends Fragment {
         recyclerView.setAdapter(mAdapter);
 
         loadMyCar();
+
+        fab_edit_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                NavHostFragment.findNavController(MyProfileFragment.this).navigate(R.id.nav_edit_profile);
+
+            }
+        });
 
         return root;
     }

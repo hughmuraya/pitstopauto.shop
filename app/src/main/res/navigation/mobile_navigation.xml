@@ -50,5 +50,10 @@
         android:name="shop.pitstopauto.android.fragments.AddCarFragment"
         android:label="@string/add_car"
         tools:layout="@layout/fragment_add_car" />
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="shop.pitstopauto.android.fragments.EditProfileFragment"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
 
 </navigation>
