@@ -141,17 +141,14 @@ public class EditProfileFragment extends Fragment {
                             String message = response.has("message") ? response.getString("message") : "";
 
 
-                            if (status){
+                            if (message.equals("User Updated Successfully")){
 
-                                NavHostFragment.findNavController(EditProfileFragment.this).navigate(R.id.nav_home);
+                                NavHostFragment.findNavController(EditProfileFragment.this).navigate(R.id.nav_menu_profile);
                                 Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
 
                             }
-                            else if(!status) {
-                                Snackbar.make(root.findViewById(R.id.frag_edit_profile), message, Snackbar.LENGTH_LONG).show();
-                            }
                             else {
-                                Snackbar.make(root.findViewById(R.id.frag_edit_profile), error, Snackbar.LENGTH_LONG).show();
+                                Snackbar.make(root.findViewById(R.id.frag_edit_profile), message, Snackbar.LENGTH_LONG).show();
 
                             }
 
